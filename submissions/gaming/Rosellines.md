@@ -43,23 +43,6 @@ Players control **Echo Avatars (NFTs)** with sound-based abilities. Every action
 ## Technical
 
 ### Architecture
-+----------------------+ +----------------------+ +----------------------+
-| Client (Web/Unity) | <--> | Game Backend API | <--> | zk-Proof Engine |
-| React / Unity | | Node.js / FastAPI | | Circom / SnarkJS |
-+----------------------+ +----------------------+ +----------------------+
-| | |
-v v v
-+--------------------------------------------------------------------------+
-| Soundness Layer Testnet |
-| - NFT registry (ERC-721 avatars, ERC-1155 items) |
-| - On-chain proof verification & settlements |
-+--------------------------------------------------------------------------+
-|
-v
-+----------------------+
-| Decentralized Storage|
-| (IPFS + WALRUS Sync) |
-+----------------------+
 
 **Core Components**:  
 - **Frontend** → Web app (React/Next.js) for marketplace & lobby, optional Unity client for rhythm gameplay.  
